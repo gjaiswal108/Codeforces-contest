@@ -116,6 +116,7 @@ function render(cont,element){
       ques+=arr.length;
       c+=1;
       row_2 = '<td class="bg-info text-white">'+arr.join(' ')+'</td>'
+      console.log(total_questions[item[1]]);
       if(total_questions[item[1]]) {
         var difference = total_questions[item[1]].filter(item => !arr.includes(item));
         if(difference.length) row_3 = '<td class="bg-danger text-white">'+ difference.join(' ')+'</td>';
